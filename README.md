@@ -20,3 +20,8 @@ This feature counts the appearance of the words in each text based on corpus.  *
 
 ## Modeling  
 After fixing the optimal feature sets and the number of features, I tried 2 different models: Logistic Regression and Naive Bayes Model.
+
+
+## Pyspark
+
+During my work, I got quite a lot running issues due to the big size of my dataset. Thus, I decided to try Pyspark to make things easier. In order to get started immediately without facing too many configuration problems, I chose to do my work on **Colab**. Since I am a total new to Spark, all my manipulations are very basic and I will update more in the future.
