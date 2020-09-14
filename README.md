@@ -14,9 +14,9 @@ Since the raw data includes a large amount of noise like punctuation, stop words
 
 ## Feature Extraction  
 We need to convert textual data to numerical representation for model training. In this project, I firsrly tried the most basic approach: Bag-Of-Word (BOW). After applyin **Count vectorizer**, each tweet is represented as numerical vectors based on the vocabulary built from the corpora.
-This feature counts the appearance of the words in each text based on corpus.  **Tfidf vectorizer** can generate another type of vector value which is the product of TF (Term Frequencey) and IDF (Inverse Document Frequency) that takes informativeness of terms into consideration.
+This feature counts the appearance of the words in each text based on corpus.  **Tfidf vectorizer** can generate another type of vector value which is the product of TF (Term Frequencey) and IDF (Inverse Document Frequency) that takes informativeness of terms into consideration.  
+**N-grams** is a natural extension of BOW/TF-IDF which retain some context by breaking long text into sequences of words. An n-gram is simply any sequence of n tokens (words). In this work, I evaluated some common n-grams: 1-grams, 2-grams and 3-grams, and also checked the test accuracy for a different number of features (size of vocabulary).
 
-## Modeling
 
-
-Machine Models I used are Logistic Regression and Naive Bayes Models.
+## Modeling  
+After fixing the optimal feature sets and the number of features, I tried 2 different models: Logistic Regression and Naive Bayes Model.
